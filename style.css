@@ -1,0 +1,106 @@
+*, *::before,*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+  :root {
+    --ff-primary:  'Nunito', sans-serif;
+    --ff-secondary:'Nunito', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #F2B886;
+
+    --fs-h1: 5rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.125em 0.125em 0.25em rgba(0,0,0,0.25);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: var(--ff-primary);
+    background-color: var(--clr-accent);
+}
+
+h1 {font-size: var(--fs-h1); }
+h2 {font-size: var(--fs-h2);}
+h3 {font-size: var(--fs-h3);}
+
+
+.logo {
+    width: 100px;
+    height: auto;
+ }
+
+.nav {
+    width: 100%
+    color: var(--clr-dark);
+    border: 1px solid red; 
+}
+  .nav__list {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    padding: 0;
+    
+  }
+  .nav__item {
+       text-align: center;
+       padding: 0px;
+       list-style: none;
+  }
+  .nav__link {
+    color: inherit;
+    margin: 0 10px;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body);
+   
+  
+  }
+  
+  .nav__link:hover {
+    color: var(--clr-light);
+    text-decoration: none;
+    border-bottom: 2px solid var(--clr-light);
+  }
+
+  .landing-header {
+      font-size: 1.75rem;
+      text-align: center;
+      margin: 0 auto;
+  }
+  
+
+/********************* Game Section *****************/
+.grid-wrapper {
+    border: 2px solid black;
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: var(--bs);
+    background-color: #fff;
+}
+.grid-section {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.memory-game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 300px;
+}
